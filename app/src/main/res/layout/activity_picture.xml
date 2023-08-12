@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.pinjamwinwin.FrontCamera.PictureActivity">
+
+    <com.wtm.cashbon.camera.FaceOverlayView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/txtFaces"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_above="@+id/linearLayout"
+        android:text="fsdfsdfsdfsdfsdfsfsfsf"
+        android:textSize="27sp" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:src="@drawable/cancel" />
+
+        <ImageView
+            android:id="@+id/btnOke"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:src="@drawable/oke" />
+
+    </LinearLayout>
+
+</RelativeLayout>

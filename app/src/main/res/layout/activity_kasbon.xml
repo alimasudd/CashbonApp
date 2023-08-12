@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:contentInsetStart="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetEnd="0dp"
+        android:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_width="180dp"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/logo_pinjamwinwin"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"/>
+
+                <ImageView
+                    android:src="@drawable/logo_ojk"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/btBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="22dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="22dp"
+                    android:src="@drawable/btn_back" />
+
+                <TextView
+                    android:id="@+id/txTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kasbon"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/tx_med"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="ScrollViewSize">
+
+            <LinearLayout
+                android:id="@+id/lyNoData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="70dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/no_data" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/belum_ada_data"
+                    android:textColor="@color/colorGrayDark2"
+                    android:textSize="@dimen/tx_large"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyNoConnection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="70dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:src="@drawable/no_connection" />
+
+                <ImageView
+                    android:id="@+id/btRefresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_refresh" />
+
+
+                <TextView
+                    android:id="@+id/txNoConnection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Koneksi"
+                    android:textColor="@color/colorGrayDark2"
+                    android:textSize="@dimen/tx_large"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txMessage"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGrayLine"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="Message"
+                android:textColor="@color/colorGrayTextDark2"
+                android:textSize="@dimen/tx_small2"
+                android:textStyle="bold" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cvPengajuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/colorGrayLine"
+                style="@style/CustomCardViewStyle"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    tools:ignore="RtlHardcoded">
+
+                    <RelativeLayout
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentLeft="true"
+                            android:text="Pilih Jumlah Kasbon"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/tx_med"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:text="Rp 500.000">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rp. "
+                                android:textColor="@color/colorGrayTextDark2"
+                                android:textSize="@dimen/tx_small2"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/txJumlahPinjaman"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="500.000"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorGrayTextDark2"
+                                android:textSize="@dimen/tx_small2"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <SeekBar
+                        android:id="@+id/sbJumlahPinjaman"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:maxHeight="8dp"
+                        android:minHeight="8dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/seekbar_progress"
+                        android:thumb="@mipmap/circle_blue"
+                        android:thumbTintMode="multiply" />
+
+                    <RelativeLayout
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:id="@+id/txLinkBiayaAdmin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:layout_marginRight="15dp"
+                            android:text="Biaya Penarikan Kasbon 3%"
+                            android:textColor="@color/colorBlueDark"
+                            android:textSize="@dimen/tx_xsmall"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/idTotalPencairan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentRight="true"
+                            android:text="Total Pencairan"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/tx_small2"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:id="@+id/linear_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/idTotalPencairan"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:text="Rp 500.000">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rp. "
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/tx_small2"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/txTotalPinjaman"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="500.000"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/tx_large1"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txBiayaAdmin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/linear_total"
+                            android:layout_alignParentRight="true"
+                            android:text="( biaya admin 0% )"
+                            android:textColor="@color/colorGrayTextDark2"
+                            android:textSize="@dimen/tx_xsmall"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:visibility="gone"
+                        android:layout_marginRight="20dp"
+                        android:text="*) bunga pinjaman pertama adalah 0,79%, bunga 0,393% berlaku untuk
+pinjaman dibayar langsung lunas dalam 30 hari."
+                        android:textColor="@color/colorGrayTextDark2"
+                        android:textSize="@dimen/tx_xsmall"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/txKasbonAktif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/linear_total"
+                        android:layout_alignParentRight="true"
+                        android:text="Aktif"
+                        android:visibility="gone"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/colorGrayTextDark2"
+                        android:textSize="@dimen/tx_xsmall"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txKasbonVerifikasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/linear_total"
+                        android:layout_alignParentRight="true"
+                        android:text="Verifikasi"
+                        android:visibility="gone"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/colorGrayTextDark2"
+                        android:textSize="@dimen/tx_xsmall"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Data Pendukung"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/tx_med"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:text="@string/lengkapi_dokumen"
+                        android:textColor="@color/colorGrayTextDark2"
+                        android:textSize="@dimen/tx_small2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/fotoselfie"
+                        android:textColor="@color/colorGrayTextDark2"
+                        android:textSize="14sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/btFoto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="4dp">
+
+                        <ImageView
+                            android:id="@+id/ivFoto"
+                            android:layout_width="70dp"
+                            android:layout_height="80dp"
+                            android:paddingBottom="7dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/txfotoselfie"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:paddingBottom="7dp"
+                            android:tag="show"
+                            android:text="@string/fotoselfie"
+                            android:textColor="@color/colorGraySeekbar" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:background="@android:color/transparent"
+                            android:paddingBottom="7dp"
+                            android:tag="show"
+                            android:text="Ambil foto"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrayDark" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/warning_fotosefie"
+                        android:textColor="@color/colorGraySeekbar"
+                        android:textSize="@dimen/tx_small2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cbKetentuan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/txTerm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/tx_xsmall" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btAjukan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="35dp"
+                        android:background="@drawable/border_button"
+                        android:text="Tarik Gaji Sekarang"
+                        android:textSize="@dimen/tx_xsmall" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cvStatusPengajuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/colorGrayLine"
+                app:cardElevation="0dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cvRiwayat"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="@color/colorGrayLine"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    tools:ignore="RtlHardcoded">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Riwayat Kasbon"
+                        android:textAllCaps="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/colorGrayTextDark2"
+                        android:textSize="@dimen/tx_small2"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvData"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_pengajuan"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="40dp"
+        tools:ignore="RtlHardcoded">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:text="Rp 500.000"
+            tools:ignore="ObsoleteLayoutParam">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="KASBON ANDA"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tx_med2" />
+
+            <TextView
+                android:id="@+id/txStatusLunas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Belum Lunas"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tx_small" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:text="Rp 500.000">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp. "
+                android:textColor="@color/white"
+                android:textSize="@dimen/tx_med2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txStatusTotalPinjaman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500.000"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tx_large1"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txStatusNoPengajuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Pengajuan : 09248775"
+            android:textIsSelectable="true"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tx_small" />
+
+        <TextView
+            android:id="@+id/txStatusTanggalPengajuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Pengajuan : feb"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tx_small" />
+
+        <TextView
+            android:id="@+id/txInfoAktif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gaji Anda akan di Potong Untuk Pelunasan Kasbon ini Pada saat Tanggal Gajian Anda Melalui Finance/HRD Anda"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tx_small" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btTTD"
+        android:visibility="gone"
+        android:textColor="@android:color/white"
+        android:text="Download Perjanjian"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/tx_xxxsmall"
+        android:layout_alignParentRight="true"
+        android:layout_height="29dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_button" />
+
+</RelativeLayout>

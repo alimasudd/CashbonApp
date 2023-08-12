@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:ignore="RtlHardcoded">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:contentInsetStart="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetEnd="0dp"
+        android:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Profile"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tx_med"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:background="@drawable/bg_form_cuti"
+        android:layout_width="match_parent"
+        android:layout_height="110dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivPhoto"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/user_icon" />
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ivPhoto"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tx_med"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pemilik Akun"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tx_small2" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/colorGrayLine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Informasi Akun"
+                android:layout_margin="20dp"
+                android:textColor="@color/colorGrayTextDark2"
+                android:textSize="@dimen/tx_med2"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Karyawan"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/colorGrayTextDark2"
+                android:textSize="@dimen/tx_small" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/icon_man"
+                    android:layout_weight="1"
+                    android:layout_width="50dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama"
+                    android:focusable="false"
+                    android:inputType="text"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="20dp"
+                    android:textSize="@dimen/tx_small2" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NIK"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorGrayTextDark2"
+                android:textSize="@dimen/tx_small" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/icon_ktp"
+                    android:layout_weight="1"
+                    android:layout_width="50dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/etNIK"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="NIK"
+                    android:textColor="@color/colorGrayTextDark2"
+                    android:textIsSelectable="true"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="20dp"
+                    android:textSize="@dimen/tx_small2" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Lahir"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorGrayTextDark2"
+                android:textSize="@dimen/tx_small" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/icon_born"
+                    android:layout_weight="1"
+                    android:layout_width="50dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/etTanggalLahir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tanggal"
+                    android:focusable="false"
+                    android:inputType="textEmailAddress"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="20dp"
+                    android:textSize="@dimen/tx_small2" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorGrayTextDark2"
+                android:textSize="@dimen/tx_small" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/icon_envelope"
+                    android:layout_weight="1"
+                    android:layout_width="50dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:textIsSelectable="true"
+                    android:textColor="@color/colorGrayTextDark2"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="20dp"
+                    android:textSize="@dimen/tx_small2" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Telepon"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorGrayTextDark2"
+                android:textSize="@dimen/tx_small" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/icon_telephone"
+                    android:layout_weight="1"
+                    android:layout_width="50dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/etNomorTelp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nomor Telepon"
+                    android:focusable="false"
+                    android:inputType="textEmailAddress"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="20dp"
+                    android:textSize="@dimen/tx_small2" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bank"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorGrayTextDark2"
+                android:textSize="@dimen/tx_small" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/icon_bank"
+                    android:layout_weight="1"
+                    android:layout_width="50dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/etBank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Bank"
+                    android:focusable="false"
+                    android:inputType="text"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="20dp"
+                    android:textSize="@dimen/tx_small2" />
+
+                <LinearLayout
+                    android:id="@+id/linearBank"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="@string/pilih_bank"
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="4dp"
+                        android:orientation="vertical">
+
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/spPilihBank"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/tx_small2" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorGrayDark" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nomor Rekening"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorGrayTextDark2"
+                android:textSize="@dimen/tx_small" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/icon_rekening"
+                    android:layout_weight="1"
+                    android:layout_width="50dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/etRekening"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nomor Rekening"
+                    android:focusable="false"
+                    android:inputType="number"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="20dp"
+                    android:textSize="@dimen/tx_small2" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Atas Nama Rekening"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorGrayTextDark2"
+                android:textSize="@dimen/tx_small" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/icon_rekening"
+                    android:layout_weight="1"
+                    android:layout_width="50dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/etNamaRekening"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Atas Nama Rekening"
+                    android:focusable="false"
+                    android:inputType="text"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="20dp"
+                    android:textSize="@dimen/tx_small2" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Perusahaan"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorGrayTextDark2"
+                android:textSize="@dimen/tx_small" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/icon_bank"
+                    android:layout_weight="1"
+                    android:layout_width="50dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/etPerusahaan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Perusahaan"
+                    android:focusable="false"
+                    android:inputType="textEmailAddress"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="20dp"
+                    android:textSize="@dimen/tx_small2" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telepon Kantor"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorGrayTextDark2"
+                android:textSize="@dimen/tx_small" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/icon_telephone"
+                    android:layout_weight="1"
+                    android:layout_width="50dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/etTelpKantor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Telepon Kantor"
+                    android:focusable="false"
+                    android:inputType="textEmailAddress"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="20dp"
+                    android:textSize="@dimen/tx_small2" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Induk Pegawai"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorGrayTextDark2"
+                android:textSize="@dimen/tx_small" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/icon_ktp"
+                    android:layout_weight="1"
+                    android:layout_width="50dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/etNIP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="NIP"
+                    android:focusable="false"
+                    android:inputType="textEmailAddress"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="20dp"
+                    android:textSize="@dimen/tx_small2" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama HRD"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorGrayTextDark2"
+                android:textSize="@dimen/tx_small" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/icon_hrd"
+                    android:layout_weight="1"
+                    android:layout_width="50dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/etHRD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="HRD"
+                    android:focusable="false"
+                    android:inputType="textEmailAddress"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="20dp"
+                    android:textSize="@dimen/tx_small2" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gaji Bulanan"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorGrayTextDark2"
+                android:textSize="@dimen/tx_small" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/icon_rekening"
+                    android:layout_weight="1"
+                    android:layout_width="50dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/etGajiBulanan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Gaji"
+                    android:focusable="false"
+                    android:inputType="textEmailAddress"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="20dp"
+                    android:textSize="@dimen/tx_small2" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gajian Setiap Tanggal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorGrayTextDark2"
+                android:textSize="@dimen/tx_small" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/icon_hrd"
+                    android:layout_weight="1"
+                    android:layout_width="50dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/etTanggalGaji"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tanggal"
+                    android:focusable="false"
+                    android:inputType="textEmailAddress"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="20dp"
+                    android:textSize="@dimen/tx_small2" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Foto KTP"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorGrayTextDark2"
+                android:textSize="@dimen/tx_small" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/icon_ktp"
+                    android:layout_weight="1"
+                    android:layout_width="50dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/etViewNIK"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="View"
+                    android:focusable="false"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="20dp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/tx_small2" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btSimpan"
+                android:layout_width="150dp"
+                android:layout_height="33dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="70dp"
+                android:background="@drawable/border_button"
+                android:text="Update"
+                android:textSize="@dimen/tx_xsmall" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#17a39c</color>
+    <color name="colorPrimaryDark">#10736e</color>
+    <color name="colorAccent">#757475</color>
+    <color name="colorBlue">#3F51B5</color>
+    <color name="colorBlueDark">#003399</color>
+    <color name="colorGray">#C2C2C3</color>
+    <color name="colorBlueSoft">#2776BD</color>
+    <color name="colorBlueVerySoft">#8db9e3</color>
+    <color name="colorGrayText">#757475</color>
+    <color name="colorGrayTextDark">#332C2B</color>
+    <color name="colorGrayTextDark2">#474443</color>
+    <color name="colorGreenSoftDark">#5a7314</color>
+    <color name="colorGreenSoft">#8db31d</color>
+    <color name="colorGreenVerySoft">#deedaf</color>
+    <color name="colorGrayColom">#DCDDDD</color>
+    <color name="colorGrayDark">#999999</color>
+    <color name="colorGrayDark2">#666666</color>
+    <color name="colorWhiteLine">#5899D2</color>
+    <color name="colorBlueSlide">#3685CB</color>
+    <color name="colorGraySeekbar">#A1A1A1</color>
+    <color name="colorGraySeekbar2">#DCDEDC</color>
+    <color name="colorGrayLine">#ECEDED</color>
+    <color name="colorGreenDark">#0a8ea0</color>
+    <color name="colorRed">#c72437</color>
+    <color name="colorRedDark">#781722</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_inactive">#003399</color>
+
+    <!-- dots active colors -->
+    <color name="dot_active">#999999</color>
+</resources>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wtm.cashbon">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Cashbon"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".TTD.TTDDigisignActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar"></activity>
+        <activity android:name=".TTD.TTDAktivActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar" />
+        <activity
+            android:name=".LupaPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar" />
+        <activity
+            android:name=".home.LunasActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar" />
+        <activity
+            android:name=".home.AktifActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar" />
+        <activity
+            android:name=".home.VerifikasiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar" />
+        <activity
+            android:name=".camera.PictureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar" />
+        <activity
+            android:name=".camera.CameraActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.project.CatatanTugasActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar" />
+        <activity
+            android:name=".home.project.ProjectActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar" />
+        <activity
+            android:name=".home.project.KunjunganActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar" />
+        <activity
+            android:name=".home.project.TugasActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar" />
+        <activity
+            android:name=".home.NotificationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar" />
+        <activity
+            android:name=".home.absensi.ViewCheckoutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar" />
+        <activity
+            android:name=".home.absensi.ViewCheckinActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar" />
+        <activity
+            android:name=".home.project.ListKunjunganActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar" />
+        <activity
+            android:name=".home.project.ListTugasActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar" />
+        <activity
+            android:name=".home.project.ListProjectActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar" />
+        <activity
+            android:name=".home.KasbonActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar" />
+        <activity
+            android:name=".home.FormCutiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar" />
+        <activity
+            android:name=".home.ProjectHomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar" />
+        <activity
+            android:name=".home.absensi.CheckOutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar" />
+        <activity
+            android:name=".home.absensi.CheckInActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar" />
+        <activity
+            android:name=".home.AbsensiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar" />
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppNoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_launcher" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="default" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/image_path" />
+        </provider>
+
+        <service android:name=".firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+    <uses-feature android:name="android.hardware.camera.any" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

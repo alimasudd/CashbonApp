@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:ignore="RtlHardcoded">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:contentInsetStart="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetEnd="0dp"
+        android:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:paddingLeft="20dp"
+                android:paddingTop="22dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="22dp"
+                android:src="@drawable/btn_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Absensi Keluar"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tx_med"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:background="@drawable/bg_abcency_out"
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivPhoto"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/user_icon" />
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ivPhoto"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tx_med"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status : Keluar"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tx_small2" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@color/colorGrayLine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jam Kerja"
+                android:textAllCaps="true"
+                android:textColor="@color/colorGrayTextDark2"
+                android:textSize="@dimen/tx_small" />
+
+            <TextView
+                android:id="@+id/txJamKerja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jam Kerja"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorGrayTextDark2"
+                android:textSize="@dimen/tx_small2"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status Absensi"
+                android:textAllCaps="true"
+                android:textColor="@color/colorGrayTextDark2"
+                android:textSize="@dimen/tx_small" />
+
+            <TextView
+                android:id="@+id/txStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keluar"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorGrayTextDark2"
+                android:textSize="@dimen/tx_small2"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jam Masuk"
+                android:textAllCaps="true"
+                android:textColor="@color/colorGrayTextDark2"
+                android:textSize="@dimen/tx_small" />
+
+            <TextView
+                android:id="@+id/txJamMasuk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jam Masuk"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorGrayTextDark2"
+                android:textSize="@dimen/tx_small2"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jam Keluar"
+                android:textAllCaps="true"
+                android:textColor="@color/colorGrayTextDark2"
+                android:textSize="@dimen/tx_small" />
+
+            <TextView
+                android:id="@+id/txJamKeluar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jam Keluar"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorGrayTextDark2"
+                android:textSize="@dimen/tx_small2"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Total Jam Kerja Hari Ini"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:textColor="@color/colorGrayTextDark2"
+            android:textSize="@dimen/tx_small"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txJam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textAllCaps="true"
+                android:layout_marginRight="7dp"
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/tx_med"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jam"
+                android:textAllCaps="true"
+                android:layout_marginRight="7dp"
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/tx_med"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txMenit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textAllCaps="true"
+                android:layout_marginRight="7dp"
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/tx_med"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menit"
+                android:textAllCaps="true"
+                android:layout_marginRight="7dp"
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/tx_med"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btKembali"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/border_button"
+            android:text="Kembali"
+            android:textSize="@dimen/tx_small" />
+
+    </LinearLayout>
+
+</LinearLayout>

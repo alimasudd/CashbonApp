@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_name">Kasbon</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="facebook_app_id">232814204524324</string>
+    <string name="login_gagal">Gagal, username atau password salah</string>
+    <string name="gagal_server">Gagal menyambungkan ke server, silahkan coba kembali</string>
+    <string name="timeout">Timeout</string>
+    <string name="fragment">Fragment</string>
+    <string name="no_connection">Tidak ada koneksi, silahkan cek internet anda</string>
+    <string name="login_kosong">Silahkan masukkan username dan password</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_setting">Setting</string>
+    <string name="cashbon">cashbon</string>
+    <string name="konfirmasi">Konfirmasi</string>
+    <string name="apakah_exit">Apakah anda ingin menutup aplikasi?</string>
+    <string name="belum_ada_data">Belum ada data</string>
+    <string name="warning_belum_lengkap">Data belum lengkap, silahkan lengkapi data anda</string>
+    <string name="step">step</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pilih_bank">Pilih Bank</string>
+    <string name="persetujuan">Anda belum menyetujui Syarat dan Ketentuan serta Kebijakan Privasi</string>
+    <string name="update_aplikasi">Aplikasi terbaru sudah tersedia, silahkan update aplikasi anda. \n\nTerima kasih.</string>
+    <string name="lengkapi_dokumen">Lengkapi dokumen persyaratan dibawah ini, agar dapat diproses</string>
+    <string name="warning_fotosefie">*Harus foto diri sendiri (sesuai atas nama pengajuan)</string>
+    <string name="fotoselfie">Foto selfie</string>
+    <string name="silahkan_foto">Silahkan masukkan foto selfie</string>
+    <string name="keterangan_aktivasi">Kode aktivasi telah dikirimkan ke nomor handphone anda, jika dalam waktu 60 detik anda tidak menerima kode, silahkan tekan kirim ulang</string>
+
+    <string name="kombinasi_password">Password minimal harus 8 karakter dengan kombinasi angka dan huruf</string>
+
+    <string name="konfirm_password">Password dan konfirmasi password harus sama</string>
+
+    <string name="terms"><![CDATA[<h5><strong><b>Keanggotaan Produk Kasbon </b></strong><strong><b>Gaji-</b></strong><strong><b>PinjamWinWin</b></strong></h5>
+<p>Syarat dan ketentuan penggunaan Layanan Kasbon Gaji dibawah ini merupakan ketentuan yang mengatur pemakaian jasa Layanan kami. Dengan membaca, menggunakan dan/atau mendaftar aplikasi Kasbon yang telah terafiliasi dengan&nbsp;kami&nbsp;baik dalam aplikasi mobile maupun website maka anda dianggap telah memahami dan menyutujui semua isi di dalam Syarat &amp; ketentuan. Syarat &amp; ketentuan ini merupakan bentuk kesepakatan antara anda dan Platform Pinjamwinwin.</p>
+<h5><strong><b>Definisi dan Pengantar</b></strong></h5>
+<p>Sebagaimana yang ditentukan didalam ketentuan&nbsp;ini istilah-istilah tersebut dapat digunakan adalah sebagai berikut: ANDA adalah setiap pengguna aplikasi Kasbon baik yang akan atau yang telah menjadi penerima pinjaman dan pemberi pinjaman dengan syarat dan ketentuan yang telah diatur.<br /><br />KAMI adalah PT. PROGO PUNCAK GROUP yang merupakan penyedia layanan Produk Kasbon&nbsp;sesuai dengan hukum Negara Indonesia,&nbsp;AGEN REFERENSI KREDIT adalah agen referensi kredit yang ditunjuk oleh pihak PT. PROGO PUNCAK GROUP.</p>
+<h5><strong><b>Pengambilan Kasbon Gaji</b></strong></h5>
+<ol>
+<li><span></span>Anda menyetujui syarat dan ketentuan dibawah ini, anda akan menandatangani perjanjian secara elektronik yang telah disediakan oleh kami sebagai ketentuan anda dapat menerima fasilitas kasbondalam bentuk rupiah dan anda bersedia membayar kembali kepada&nbsp;Pinjamwinwin melalui perusahaan tempat anda bekerja berupa uang pokok, biaya penarikan gaji&nbsp;anda wajib memberikan data-data Informasi asli, akurat dan sebenarnya;</li>
+<li><span></span>Anda menyetuji dan dan telah memahami bahwa anda mengambil kasbon melalui Platform kami yang telah bekerjasama dengan perusahaan anda akan mengakibatkan pemotongan gaji anda di perusahaan anda untuk pembayaran &nbsp;kasbon anda ini bersama kami yang dilakukan oleh HRD perusahaan anda pada saat tanggal gajian anda tiba;</li>
+<li><span></span>Anda telah menyatakan dan telah menyetujui memberikan kuasa atau wewenang kepada perusahaan anda bekerja sabagaimana dalam aplikasi ini untuk melakukan pemotongan atas gaji anda untuk keperluan melunasi seluruhkasbon yang telah anda ambil&nbsp;sesuai&nbsp;yang ada dalam aplikasi pinjaman kasbon ini;</li>
+<li><span></span>Anda menyetujui bahwa pelunasan &nbsp;kasbonyang anda ambil&nbsp;&nbsp;adalah prioritas utama dari pada kewajiban lainnya, sehingga pemotongan gaji anda harus diutamakan untuk melakukan pembayaran &nbsp;kasbon yang telah anda ambil saat ini maupun pengambilan sebelumnya (jika ada)</li>
+<li><span></span>Anda menyadari bahwa anda dapat melakukan pengajuan kasbon lebih dari 1 kali dalam sebulan (dalam satu periode) selama saldo gaji anda mencukupi, dan Cut off perusahaan anda belum tiba;</li>
+<li><span></span>Anda menyadari bahwa pembayaran atas seluruh kasbonanda&nbsp;melalui Progo Puncak Group di tanggung oleh perusahaan anda dan di ambil dari pemotongan gaji &nbsp;anda pada saat tanggal gajian tiba;</li>
+<li><span></span>Anda membaca dan menerima dengan seluruh persyaratan di perjanjian ini dan setuju dengan aturan dan biaya jasa pengambilan &nbsp;kasbonyang &nbsp;kami&nbsp;tetapkan;</li>
+<li><span></span>Anda menegaskan semua rincian dan informasi pribadi yang diberikan kepada kami baik melalui perusahaan anda maupun melalui anda sendiri adalah benar, yang disampaikan dengan penuh kesadaran dan tidak ada tekanan dari pihak manapun dan dengan didukung oleh data-data yang akurat serta sebenarnya. Anda memahami bahwa kamiakan melaporkan semua informasi yang sifat nya melanggar hukum kepada pihak berwenang;</li>
+<li><span></span>Anda dengan ini menyatakan dengan sebenarnya bahwa:<br />Memastikan bahwa telah membaca dan menyetujui ketentuan-ketentuan penggunaan ini,kebijakan Privasi dan kebijakan Cookie kami.<br />b. Anda memiliki kapasitas sebagai karyawan perusahaan dan penerima fasilitas kasbon, dan paham mengenai proses pengambilan kasbon gaji&nbsp;berbasis teknologi informasi.</li>
+<li><span></span>Anda menyetujui bahwa laporan kredit anda akan dilakukan pengecekan oleh</li>
+</ol>
+<h5><strong><b>Keterlambatan Pembayaran</b></strong></h5>
+<ol>
+<li><span></span>anda menyetujui bahwa setiap keterlambatan pembayarankasbon yang telah di ambil &nbsp;akan dikenai denda keterlambatan yang di tanggung oleh perusahaan anda dengan mekanisme yang berlaku dalam perusahaan anda;</li>
+<li><span></span>anda memahami dan menyetujui bahwa setelah lewat jangka waktu pembayaran, dan kami telah melakukan berbagai upaya penagihan melalui perusahaan anda namun perusahaan anda tidak melaksanakan kewajibannya sebagaimana yang telah disepakati dalam perjanjian kerjasama yang terpisah dalam terms of use ini, maka jika diperlukan kami akan melibatkan anda untuk memberikan keterangan di hadapan pejabat terkait yang berhubungan dengan penyelesaian sengketa perdata;</li>
+</ol>
+<h5><strong><b>Transaksi Pembayaran</b></strong></h5>
+<ol>
+<li><span></span>Perusahaan anda akan melakukan pelunasan atas seluruh &nbsp;kasbon andayang telah anda lakukan&nbsp;pada&nbsp;saat tanggal gajian anda yang berlaku di perusahaan tempat anda bekerja&nbsp;tiba&nbsp;berdasarkan invoce yang kami kirim kepada perusahaan anda;</li>
+<li><span></span>PembayaranTagihan kasbon&nbsp;tersebut wajib dilakukan melalui virtual account yang telah kami sediakan melalui perusahaan anda melalui sistem potong gaji karyawan;</li>
+<li><span></span>Anda tidak memiliki kewenangan secara langsung dalam melakukan pembayaran atas kasbon anda namun anda memberikan kewenangan penuh kepada perusahaan anda melalui HRD anda untuk melakukan pembayaran melalui pemotongan gaji karyawan;</li>
+<li><span></span>Segala bentukan kesalahan atau kekeliruan anda dalam penggunaan aplikasi kami, bukan tanggungjawab kami.</li>
+</ol>
+<h5><strong><b>Pengguna Pinjaman</b></strong></h5>
+<ol>
+<li><span></span>anda merupakan Penerima dana/pengguna kasbon gajiyang termasuk dalam syarat dan ketentuan sebagai penerima kasbon gaji baik individu atau anda yang bertindak untuk dan atas nama perusahaan mewakili sebuah perusahaan melakukan pinjaman wajib memiliki kapasitas hukum bertanggung&nbsp;jawab;</li>
+<li><span></span>Segala risiko yang timbul akibat adanya proses P2P Lending adalah risiko dari masing-masing pihak</li>
+</ol>
+<h5><strong><b>Informasi </b></strong><strong><b>Pengambilan Kasbon Gaji</b></strong></h5>
+<ol>
+<li><span></span>Kami memberikan Pinjaman kasbon minimal Rp.000.,- (seratus lima puluh ribu) dan maksimal 70% dari nominal gaji anda dariperusahaan anda bekerja</li>
+<li><span></span>Biaya admin penarikan kasbonsebesar maksimal 3% dan dipotong dari depan;</li>
+<li><span></span>Denda keterlambatan pembayaran akan dikenakan biaya 0,2% perhari yang dibebankan melalui perusahaan anda;</li>
+<li><span></span>Anda harus memastikan bahwa informasi yang anda berikan, pada saat registrasi / pendaftaran atau pada saat anda memberikan informasi kepada kami atau melalui HRD anda, benar,valid, akurat dan lengkap, dan apabila terjadi perubahan data pribadi anda maka anda wajib segera menginformasikan kepada kami.</li>
+</ol>
+<h5><strong><b>Hak Cipta, Hak Paten, dan Mer</b></strong><strong><b>e</b></strong><strong><b>k</b></strong></h5>
+<p>Kami dan aplikasi mitra kami adalah Kasbon, seluruh hak milik intelektual namun tidak terbatas pada hak paten, hak cipta dan hak merek, menjadi milik paten dari PT. PROGO PUNCAK GROUP, anda dilarang untuk menyalin, mengubah, dan membagikan seluruh hak kekayaan intelektual kami kepada publik dengan maksud tertentu tanpa&nbsp;mendapatkan persetujuan kami.</p>
+<h5><strong><b>Kerahasiaan</b></strong></h5>
+<ol>
+<li><span></span>anda wajib menjaga kerahasiaan data informasi dari PT. Progo Puncak Groupbeserta mitranya anda dilarang menyebarluaskan informasi data-data yang kami kirimkan kepada&nbsp;anda kepada&nbsp;pihak lain tanpa persetujuan kami, baik setelah anda mengakhiri pinjaman ini;</li>
+<li><span></span>setiap pelanggaran akan dipertimbangkan keranah hukum baik Pidana maupun Perdata.</li>
+</ol>
+<h5><strong><b>Penyelesaian Hukum</b></strong></h5>
+<p>Persyaratan dan ketentuan ini berdasar ketentuan Peraturan Pemerintah Republik Indonesia. Pihak-Pihak terkait, tunduk kepada yurisdiksi non - eksklusif dari Pengadilan Negeri Surabaya. Namun tidak terbatas dalam perjanjian ini bisa saja berlaku di pengadilan manapun yang memiliki domisili hukum kompeten sesuai aturan hukum yang berlaku.</p>
+<h5><strong><b>Informasi melalui internet</b></strong></h5>
+<p>Terhadap keamanan dan kebijakan,&nbsp;Kami tidak bertanggung&nbsp;jawab atas pesan yang hilang , tertahan atau diubah oleh pihak ketiga dan kami tidak bertanggung-jawab&nbsp;secara material maupun immaterial kepada anda atau siapa saja atas kerusakan atau hal lainnya sehubungan dengan pesan yang dikirim oleh anda kepada kami atau kami kepada anda melalui koneksi internet.</p>
+<h5><strong><b>Kebijakan Pengguna</b></strong></h5>
+<p>Dengan anda mengklik dan mencentang fitur saya menyetujui seluruh syarat dan ketentuan serta kebijakan privasi kami, maka anda dianggap telah membaca dan mengerti serta sepakat atas ketentuan-ketentuan yang ada di&nbsp;dalam syarat dan ketentuan tersebut yang berlaku dalam pengambilan kasbon gaji anda, serta memiliki kekuatan mengikat sepanjang hak dan kewajiban masing-masing pihak telah berlangsung.</p>]]></string>
+
+
+    <string name="privacy"><![CDATA[<p>Kebijakan privasi ini adalah komitmen dari kami untuk melindungi informasi pribadi dan keamanan pengguna. Kami ingin meyakinkan kepada semua pihak bahwa kami tidak akan menjual atau menyalahgunakan data pengguna kami ke pihak manapun yang tidak berkepentingan, tanpa persetujuan pengguna (pemilik data). Data diri serta data pribadi yang dicantumkan anda kami proses pada pengisian aplikasi sepenuhnya kami gunakan untuk hanya proses verifikasi data pengambilan kasbon saja. Seluruh data tersebut dijaga kerahasiaannya, tidak akan dijual atau dibagikan kepada pihak manapun demi kepentingan komersil. Kami juga perlu menjelaskan bahwa, kami diwajibkan oleh hukum yang berlaku untuk membuka data kepada pihak ketiga atas perintah peraturan perundang-undangan yang berlaku.</p>
+<h5><strong><b>Informasi dari Anda</b></strong></h5>
+<p>Informasi atau Data tentang Anda kami jamin akan kerahasiaannya, dan dengan memberikan data kepada kami, kami akan mengumpulkan dan memproses informasi tentang anda yakni sebagai berikut:</p>
+<p><strong><b><span>Informasi Perangkat.</span></b></strong></p>
+<p>Informasi meliputi data yang diperolah dari pengakat seluler Anda yaitu : informasi lokasi, kamera,&nbsp;Untuk itu Anda harus memberikan izin terhadap aplikasi Kasbon mintra kami yang meliputi izin lokasi, kamera, id perangkat, dan izin menampilkan aplikasi di atas aplikasi lain.</p>
+<p><strong><b><span>Informasi Manual.</span></b></strong></p>
+<p>Terkait Informasi yang kami peroleh langsung baik dari perusahaan anda maupun dari anda sendiri baik secara online maupun offline baik tertulis maupun tidak tertulis baik informasi data referensi keluarga anda, hal tersebut semata-mata hanya untuk keperluan analisa pengajuan pengambilan kasbon anda dan kami menjamin keamanan dan kerahasiaan datanya.<br /><br />Aplikasi Kasbon mitra kami&nbsp;meminta izin akses lokasi untuk mendapatkan data lokasi yang akurat guna proses verifikasi pengajuan Anda secara online maupun offline atau tatap muka. Aplikasi ini mengumpulkan data lokasi untuk mengaktifkan fitur login, pengajuan pinjaman, dan permintaan verifikasi bahkan saat aplikasi ditutup atau tidak digunakan. Data lokasi murni digunakan untuk verifikasi pengajuan Anda, dan kami berkomitmen untuk tidak membagikan data pribadi Anda kepada siapapun. Kewajiban anda dalam penggunaan konten platform,&nbsp;anda berkewajiban untuk mematuhi peraturan perundang-undangan yang berlaku terhadap segala materi dan informasi yang anda berikan.<br /><br />Anda dilarang untuk mengunggah konten yang berisi ancaman, intimidasi, melecehkan, membahayakan, vulgar, cabul, mengandung penipuan, menyerang hak privasi atau publisitas, kebencian, diskriminasi ras atau etnis atau yang mungkin ditolak berdasarkan setiap hukum atau kerangka nasional seperti Kode Etik Internet dari Otoritas Pengembangan Media, atau yang dapat mengekspos Para Pengguna terhadap setiap kerugian atau kewajiban apapun, atau bertentangan dengan Standar Konten yang ditetapkan di bawah;<br /><br />Anda dilarang meretas (hack), menghalangi, mengganggu, menonaktifkan, membebani dengan berlebihan atau mengganggu kerja atau tampilan yang layak dari situs atau Layanan, yang termasuk tetapi tidak terbatas pada serangan penolakan layanan (denial-of-service), serangan spoof, sesi peretasan, gangguan rekayasa terbalik, pemprograman ulang, atau pemanfaatan setiap teknik framing untuk melampirkan setiap konten atau informasi kepemilikan lainnya;<br /><br />Apabila terbukti anda telah melanggar ketentuan dan syarat dari ketentuan ini, maka suatu saat kami bisa memutus hubungan dengan anda dan Terjadinya kerugian yang timbul baik secara langsung maupun tidak langsung yang diakibatkan atas pelanggaran yang anda lakukan sepenuhnya akan menjadi tanggungjawab anda, dan segala pelanggaran hukum akan dipertanggungjawabkan baik hukum pidana dan hukum perdata.</p>
+<h5><strong><b>Batasan Tanggungjawab</b></strong></h5>
+<p>Platform Pinjamwinwin merupakan layanan P2P lending yang mempertemukan pemberi dana/Lender dan penerima dana/Borrower kasbon dengan sistim online yang menyediakan layanan Kasbon Gaji&nbsp;dan Lending kepada anda. Dengan demikian anda memahami bahwa batasan tanggung jawab Pinjamwinwin secara proporsional adalah sebagai penyedia jasa layananan keuangan&nbsp;berbasis teknology informasi. penggunaan pada setiap konten, merupakan konsekuensi dari pengguna aplikasi masing-masing pribadi.<br /><br />Setiap hilangnya peluang, data, keuntungan atas kesalahan / pelanggaran anda, bukan merupakan tanggangjawab penyelenggara.<br /><br />Setiap penyebab yang terjadi di luar kendali Perusahaan, baik secara penuh atau sebagian, termasuk namun tidak terbatas kepada kegagalan peralatan elektronik atau mekanik atau jalur komunikasi, telepon atau masalah-masalah interkoneksi lain, akses yang tidak sah, kegagalan transportasi publik, sistem komunikasi utilitas penyedia jasa angkutan, data atau pencurian lainnya (termasuk pencurian kata sandi, kode atau urutan saat login) dan kesalahan operator.<br /><br />Setiap hilangnya keuntungan, peluang atau informasi data yang terjadi atas penggunaan Platform, Konten Platform, Layanan, Konten Pengguna, Konten pihak ketiga, dan situs pihak ketiga.<br /><br />Anda membebaskan Perusahaan, afiliasinya, pemegang sahamnya, direktur, komisaris, karyawan, subkontraktor, pemasok, agen atau mitra kami dari dan atas segala bentuk tuntutan, gugatan, klaim, kerugian, ganti rugi, termasuk biaya konsultan hukum, dan biaya lain diluar kendali kami yang disebabkan oleh pelanggaran Syarat dan Ketentuan Umum oleh anda dan ketentuan lain yang ditetapkan oleh Perusahaan.</p>
+<h5><strong><b>Adendum</b></strong></h5>
+<p>Syarat dan ketentuan ini dapat diubah dan/atau diperbaharui sewaktu-waktu&nbsp;tanpa harus kami beritahukan secara langsung kepada anda. Kami menyarankan agar anda membaca secara seksama dan memeriksa secara berkala halaman syarat dan ketentuan berikut ini untuk mengetahui perubahan apapun.</p>
+<h5><strong><b>Pengakhiran </b></strong><strong><b>Keanggotaan</b></strong></h5>
+<p>anda dengan ini dianggap telah mengakhiri pengambilan kasbon&nbsp;apabila telah memenuhi seluruh beban kewajiban pembayaran yang telah dipersyaratkan melalui perusahaan anda, pengakhiran keanggotaan kasbon&nbsp;akan memutus hubungan dengan kami sebagai pihak penyedia jasa, dan apabila dikemudian hari terdapat keluhan, dan laporan dari Pihak lain terhadap adanya unsur kesalahan, maka bukan merupakan tanggungjawab kami. Kecuali ditentukan lain, anda dapat melakukan pengambilan&nbsp;kasbon kembali sewaktu-waktu&nbsp;setelah pembayaran taghan kasbon anda sebelumnya telah dilunasi&nbsp;oleh perusahaan anda, maka secara otomatis data dan informasi yang anda berikan kami munculkan kembali.</p>
+<h5><strong><b>Disclaimer</b></strong></h5>
+<p>Kami menyediakan Konten Platform dan Layanan atas dasar &ldquo;SEBAGAIMANA ADANYA&rdquo;, &ldquo;SEBAGAIMANA TERSEDIA&rdquo;, tanpa jaminan apapun<br /><br />Kami tidak menjamin fungsi-fungsi yang di dalam Platform, Layanan, Konten Platform, atau konten lain akan tepat waktu, tanpa gangguan atau bebas dari kesalahan atau tanpa kelalaian, maupun ancaman terhadap virus atau komponen berbahanya lain, atau pengunduhan, instalasi atau penggunaan setiap Konten Situs dalam atau dengan komputer apapun tidak akan mempengaruhi fungsi atau kinerja komputer. Oleh karena itu, anda setuju untuk melepaskan Perusahaan dari segala tanggung jawab atas kerugian dari salah satu Konten Pengguna anda yang disebabkan keadaan apapun yang berada di luar kendali Perusahaan.<br /><br />Kami tidak menjamin atas setiap situs pihak ketiga yang diakses melalui situs atau Layanan atau atas Konten pihak ketiga yang diposting pada situs atau Layanan kami, termasuk tetapi tidak terbatas pada konten, akurasi, keandala atau kebijakan dari atau terkandung dalam situs pihak ketiga atau konten pihak ketiga, anda menanggung konsekuensi untuk setiap akses situs pihak Ketiga atau konten pihak ketiga dan/atau kegagalan produk dan layanan yang ditawarkan atau di&nbsp;iklankan pada situs pihak ketiga atau konten pihak ketiga.<br /><br />Kami tidak menjamin atau membuat pernyataan apapun bahwa semua Layanan yang dijelaskan layak atau tersedia untuk digunakan di semua negara. Penggunaan Platform, Konten Platform, akan disesuaikan terhadap yurisdiksi hukum di negara masing-masing. Oleh karena itu, anda bertanggung jawab untuk mengetahui larangan dan pembatasan aturan tersebut, dan wajib mematuhi aturan hukum yang ada.</p>
+<h5><strong><b>Ketentuan lain-lain</b></strong></h5>
+<p>Dengan menggunakan aplikasi dan atau website kami, anda menjamin bahwa anda telah dianggap mengerti dan memahami semua tata cara&nbsp;pengambilan kasbon&nbsp;berbasis teknologi informasi serta ketentuan dan syarat yang telah diatur, anda memahami dan menyetujui bahwa kami dan organisasi lain bisa mengakses dan menggunakan data informasi anda untuk setiap pelanggaran perjanjian, tindak penipuan, terorisme dan pencucian uang, dan pelepasan informasi dan data yang anda berikan kepada kami.</p>
+<h5><strong><b>Informasi tentang Kami</b></strong></h5>
+<p>Progo Puncak Grup adalah Layanan Pendanaan Bersama Berbasis Teknologi Informasi, kami adalah sebuah perusahaan yang didirikan secara sah dan diatur menurut hukum Indonesia, terdaftar dengan nama PT. Progo Puncak Group yang berada di Jl. Progo No.09 Surabaya.<br />Hubungi kami jika anda memiliki pertanyaan atau hal lain terkait penggunaan informasi pribadi anda seperti yang telah disampaikan diatas, silahkan hubungi kami di:</p>
+<p><strong><b>Progo Puncak Group,</b></strong><strong><b><br /></b></strong><strong><b><br /></b></strong><strong><b>Tlp : (031) 5677624</b></strong></p>]]></string>
+
+    <string-array name="pilihan_cuti">
+        <item>-- Pilih</item>
+        <item>Cuti Tahunan</item>
+        <item>Urusan Keluarga</item>
+        <item>Menikah</item>
+        <item>Melahirkan</item>
+        <item>KTP</item>
+        <item>SIM</item>
+        <item>Keperluan Pribadi</item>
+    </string-array>
+    <string-array name="pilihan_status">
+        <item>-- Pilih</item>
+        <item>Belum selesai</item>
+        <item>Selesai</item>
+    </string-array>
+    <string-array name="pilihan_prioritas">
+        <item>-- Pilih</item>
+        <item>Ringan</item>
+        <item>Sedang</item>
+        <item>Tinggi</item>
+    </string-array>
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/colorGrayTextDark2"
+            android:textSize="@dimen/tx_small2" />
+
+        <TextView
+            android:id="@+id/txTanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="7dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/txNo"
+            android:textColor="@color/colorGrayTextDark2"
+            android:textSize="@dimen/tx_small2" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_below="@id/txNo"
+            android:layout_marginLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGrayTextDark2"
+                android:padding="3dp"
+                android:textSize="@dimen/tx_small2" />
+
+            <TextView
+                android:id="@+id/txCatatan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:textStyle="italic"
+                android:textSize="@dimen/tx_small2" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <View
+        android:background="@color/colorGrayTextDark2"
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="1dp"/>
+
+</LinearLayout>
